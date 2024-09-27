@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.u{
+    font-size: 100px;
+}
+.header{
+    min-height: 100px;
+    width: 100%;
+    background-color: #114D99;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.textimg{
+    min-height: 805px;
+    width: 100%;
+    background-color: #114D99;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+hr {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    display: block;
+    height: 3px;
+    background: white;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+} 
+
+.nav-links u{
+    text-decoration-thickness: 4px;
+    text-underline-offset: 0.25em;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    text-align: left;
+    float: left;
+}
+
+.text-box h1{
+    font-size: 180px;
+    color: white;
+    margin-top: 0px;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+.text-box p{
+    font-size: 30px;
+    color: white;
+}
+
+.image1 img{
+    margin: auto;
+    float: right;
+    padding: 20px;
+    height: 700px;
+    padding-right: 10%;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------ Projects in Index --------*/
+
+.projectindex{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+ 
+.projectindex h1{
+    font-size: 50px;
+}
+
+.index-col img{
+    width: 100%;
+}
+
+.index-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.layer:hover{
+    background: rgba(231, 251, 255, 0.7);
+    color: black;
+    padding-top: 50%;
+    font-size: 30px;
+}
+
+.index-button{
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(229, 228, 228);
+    border-radius: 10px;
+}
+
+.index-button:hover{
+    border: 1px solid #114D99;
+    background: #114D99;
+    transition: 1s;
+    color: white;
+    border-color: white;
+}
+
+
+/*------ Footer --------*/
+
+.footer{
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-color:#114D99;
+    padding-bottom: 70px;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer p{
+    color: white;
+}
+
+.icons .fa{
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 40px;
+}
+
+
+/*------ About Me Page --------*/
+
+.subheader{
+    height: 150px;
+    width: 100%;
+    background-color: #114D99;
+    text-align: center;
+    min-height: 100%;
+}
+
+.about-me{
+    width: 80%;
+    margin-left: auto;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 20px 2px;
+ }
+
+ .about-col img{
+    width: 70%;
+ }
+
+ .about-col h1{
+    padding-top: 0;
+    font-size: 40px;
+}
+
+.about-col p{
+    padding: 15px 0 25px ;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+/*------ Projects Page --------*/
+
+.sub-header{
+    height: 17vh;
+    width: 100%;
+    background-color: #114D99;
+}
+
+.projects{
+    width: 80%;
+    margin: auto;
+    color: white;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.projects-col{
+    flex-basis: 100%;
+    padding: 20px 0px;
+ }
+
+.projects-col img{
+    width: 50%;
+    margin-left: 40%;
+    flex: 1;
+ }
+
+ .projects-col h1{
+    padding-top: 0;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 50%;
+}
+
+.projects-col p{
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.projects-col ul{
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+    text-align: left;
+    padding-left: 180px;
+
+}
+
+.project1 {
+    background-color: #114D99;
+    border-radius: 20px;
+}
+
+.project2 {
+    background-color: #114D99;
+    border-radius: 20px;
+}
+
+.project3 {
+    background-color: #114D99;
+    border-radius: 20px;
+}
