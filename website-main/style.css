@@ -1,0 +1,506 @@
+/* ---------- GLOBAL RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    background-color: #1358af;   /* blue behind everything */
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: white;     /* let sections control their own bg */
+}
+
+
+/* ---------- GENERAL UTILITIES ---------- */
+
+.u {
+    font-size: 100px;
+}
+
+/* ---------- HEADER / HERO SECTIONS ---------- */
+
+.header,
+.textimg {
+    width: 100%;
+    background-color: #1358af;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Header bar */
+.header {
+    min-height: 0px;
+}
+
+/* HERO SECTION (name + description + photo) – DESKTOP DEFAULT = SIDE BY SIDE */
+.textimg {
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    display: block;
+    height: 2px;
+    background: white;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links u {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+}
+
+/* ---------- HERO TEXT & IMAGE ---------- */
+
+/* Text block (name + description) */
+.text-box {
+    width: 30%;
+    min-width: 300px;
+    color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box h1 {
+    font-size: 80px;
+    margin: 0 0 10px;
+}
+
+.text-box p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Hero image container */
+.image1 {
+    width: 26%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Rounded hero image */
+.image1 img,
+.outside_body img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons under hero text */
+.hero-buttons {
+    margin-top: 18px; 
+    display: flex;
+    gap: 15px;
+}
+
+.hero-btn {
+    padding: 10px 18px;
+    background-color: white;
+    color: #1358af;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s ease;
+    border: 2px solid white;
+}
+
+.hero-btn:hover {
+    background-color: #1358af;
+    color: white;
+    border: 2px solid white;
+    transform: translateY(-2px);
+}
+
+/* ---------- GENERIC ROW LAYOUT ---------- */
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Center content inside each project card row on projects.html */
+.project1 .row,
+.project2 .row,
+.project3 .row,
+.project4 .row {
+    align-items: center;
+}
+
+/* ---------- INDEX PAGE PROJECTS ---------- */
+
+.projectindex {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.projectindex h1 {
+    font-size: 30px;
+}
+
+.projects-subtitle {
+    margin-top: 15px;         /* spacing under title */
+    margin-bottom: 15px;      /* space before images */
+    font-size: 18px;          /* slightly bigger text */
+    color: #333;              /* dark gray for nicer contrast */
+    text-align: center;
+}
+
+/* Row that holds the three projects */
+.projectindex .row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;   /* center the group */
+    gap: 32px;                 /* spacing between cards */
+}
+
+/* Each project card – card handles the radius + shadow */
+.index-col {
+    flex: 0 0 auto;
+    position: relative;
+    border-radius: 18px;                /* match image corners */
+    overflow: hidden;                   /* clip image + overlay */
+    margin-bottom: 30px;
+    background: none;
+}
+
+/* Project images – no radius/shadow, card handles that */
+.index-col img {
+    width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 0;                   /* let parent clip corners */
+    box-shadow: none;                   /* shadow already on card */
+    transition: transform 0.3s ease;
+}
+
+
+.index-col img:hover {
+    transform: scale(1.03);
+}
+
+/* Hover overlay – same size as card/image */
+.layer {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;             /* exactly matches card */
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    transition: 0.3s ease;
+}
+
+/* Only tint on hover */
+.index-col:hover .layer {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Index button */
+
+.index-button {
+    display: inline-block;
+    color: black;
+    padding: 12px 10px;
+    font-size: 16px;
+    background-color: rgb(229, 228, 228);
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.index-button:hover {
+    background: #1358af;
+    transition: 1s;
+    color: white;
+    border-color: white;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    margin-top: 0px;          /* add white space above footer */
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 16px;      /* tighten or loosen as you like */
+    background-color: #1358af;
+}
+
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+.icons .fa {
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 40px;
+}
+
+
+/* ---------- ABOUT ME PAGE ---------- */
+
+.about-me {
+    width: 100%;
+    margin: 0 auto 50px auto;
+    background-color: white;
+
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 20px 2px;
+}
+
+.about-col img {
+    width: 50%;
+}
+
+.about-col h1 {
+    padding-top: 0;
+    font-size: 30px;
+}
+
+.about-col p {
+    padding: 15px 0 25px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* ---------- PROJECTS PAGE (projects.html) ---------- */
+
+/* Container for all project cards */
+.projects {
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual project card */
+.project1,
+.project2,
+.project3,
+.project4 {
+    background-color: #1358af;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 30px);
+}
+
+.projects-col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Project images on projects.html */
+.projects-col img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.projects-col h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.projects-col p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.projects-col ul {
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 20px;
+}
+
+/* ---------- HORIZONTAL RULE ---------- */
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ========================================================= */
+/*                     RESPONSIVE BREAKPOINTS                */
+/* ========================================================= */
+
+/* Tablets and smaller */
+@media (max-width: 900px) {
+
+    .nav-links {
+        padding-right: 0;
+    }
+
+    .nav-links ul li {
+        padding: 10px 15px;
+    }
+
+    /* HERO becomes stacked on smaller screens */
+    .textimg {
+        flex-direction: column;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .text-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-box h1 {
+        font-size: 56px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .image1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .image1 img,
+    .outside_body img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index-col {
+        flex-basis: 100%;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        flex: 1 1 100%;
+    }
+
+    .projects-col {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-col img {
+        width: 100%;
+    }
+}
+
+/* Phones (extra small) */
+@media (max-width: 600px) {
+
+    .text-box h1 {
+        font-size: 42px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 5px 0;
+    }
+}
