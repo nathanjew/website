@@ -43,25 +43,27 @@
     }
 }
 
-/* Phones (mobile L and smaller) */
+/* Phones (mobile L and smaller) – FINAL OVERRIDES */
 @media (max-width: 425px) {
 
     /* HERO: stack text then image */
     .textimg {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column !important;   /* force column on mobile */
         padding: 32px 5%;
         gap: 24px;
     }
 
     .text-box {
-        width: 100%;
+        width: 100% !important;
         text-align: center;
     }
 
     .image1 {
-        width: 100%;
+        width: 100% !important;
         justify-content: center;
         margin-top: 12px;
+        align-self: center !important;
     }
 
     .image1 img,
@@ -72,7 +74,8 @@
 
     /* PROJECTS: cards in a column */
     .projectindex .row {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column !important;
         align-items: center;
         gap: 20px;
     }
@@ -80,4 +83,16 @@
     .index-col {
         flex-basis: auto;
     }
+
+        /* center hero buttons */
+    .hero-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-btn {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
+    

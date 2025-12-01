@@ -96,6 +96,7 @@ nav img {
     font-size: 18px;
 }
 
+
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -107,6 +108,11 @@ nav img {
 }
 
 .nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a.active::after,
+.nav-links ul li.active::after {
     width: 100%;
 }
 
@@ -430,3 +436,4 @@ hr {
     margin: 0;
     border: 0;
 }
+
