@@ -37,8 +37,7 @@
         align-self: flex-start;
     }
 
-    .image1 img,
-    .outside_body img {
+    .image1 img {
         max-width: 280px;
     }
 }
@@ -66,9 +65,8 @@
         align-self: center !important;
     }
 
-    .image1 img,
-    .outside_body img {
-        max-width: 90%;
+    .image1 img {
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -93,6 +91,25 @@
     .hero-btn {
         text-align: center;
         margin: 0 auto;
+    }
+
+        /* NAV: stacked but right-aligned */
+    .nav-links {
+        flex-direction: column;      /* stack logo + links */
+        text-align: right;           /* align links to right */
+        padding-right: 0px;         /* spacing from the edge */
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links ul li {
+        display: block;              /* stack vertically */
     }
 }
     
