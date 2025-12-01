@@ -145,15 +145,7 @@ nav img {
 .outside_body img {
     display: block;
     width: 100%;
-    height: auto;
-    border-radius: 0;                 /* container handles the rounding */
-    box-shadow: none;                 /* remove extra large ghost shadow */
-}
-
-/* Rounded hero image */
-.image1 img,
-.outside_body img {
-    width: 100%;
+    height: auto;                /* container handles the rounding */
     max-width: 320px;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
@@ -433,23 +425,21 @@ hr {
    ============================ */
    @media (max-width: 1777px) {
 
-    /* HERO section: pull content up, reduce extra height */
     .textimg {
-        min-height: auto;         /* stop forcing extra height */
-        padding-top: 40px;        /* a bit of space under nav */
-        padding-bottom: 40px;     /* less huge bottom padding */
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
         padding-left: 5%;
         padding-right: 5%;
-        align-items: flex-start;  /* content starts near top */
+        align-items: flex-start;
     }
 
-    /* Text block gets a bit wider, slightly smaller font */
     .text-box {
         width: 45%;
     }
 
     .text-box h1 {
-        font-size: 64px;          /* was 80px */
+        font-size: 64px;
     }
 
     .text-box p {
@@ -461,15 +451,16 @@ hr {
         padding: 8px 16px;
     }
 
-    /* Image sits closer to the top and shrinks a bit */
+    /* ✅ let the card shrink to the image */
     .image1 {
-        width: 30%;
-        align-self: flex-start;   /* don’t drift down */
+        width: auto;          /* was 30% */
+        max-width: 320px;     /* same as your desktop max */
+        align-self: flex-start;
     }
 
     .image1 img,
     .outside_body img {
-        max-width: 280px;         /* a bit smaller than 320px */
+        max-width: 280px;
     }
 }
 

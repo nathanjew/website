@@ -1,0 +1,138 @@
+/* ============================
+   Large laptop screens
+   (everything 1777px and below)
+   ============================ */
+   @media (max-width: 1777px) {
+
+    .textimg {
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: flex-start;
+    }
+
+    .text-box {
+        width: 45%;
+    }
+
+    .text-box h1 {
+        font-size: 64px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .hero-buttons .hero-btn {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+
+    /* ✅ let the card shrink to the image */
+    .image1 {
+        width: auto;          /* was 30% */
+        max-width: 320px;     /* same as your desktop max */
+        align-self: flex-start;
+    }
+
+    .image1 img,
+    .outside_body img {
+        max-width: 280px;
+    }
+}
+
+/* Tablets and smaller */
+@media (max-width: 900px) {
+
+    .nav-links {
+        padding-right: 0;
+    }
+
+    .nav-links ul li {
+        padding: 10px 15px;
+    }
+
+    /* HERO becomes stacked on smaller screens */
+    .textimg {
+        flex-direction: column;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .text-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-box h1 {
+        font-size: 56px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .image1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .image1 img,
+    .outside_body img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index-col {
+        flex-basis: 100%;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        flex: 1 1 100%;
+    }
+
+    .projects-col {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-col img {
+        width: 100%;
+    }
+}
+
+/* Phones (extra small) */
+@media (max-width: 600px) {
+
+    .text-box h1 {
+        font-size: 42px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 5px 0;
+    }
+}
