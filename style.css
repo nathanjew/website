@@ -89,10 +89,6 @@ nav img {
     padding: 10px 30px;
 }
 
-.nav-links ul li a {
-    position: relative;
-}
-
 /* underline attached to the text, not the full li width */
 .nav-links ul li a::after {
     content: '';
@@ -112,6 +108,7 @@ nav img {
 }
 
 .nav-links ul li a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 18px;
