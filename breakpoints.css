@@ -30,7 +30,7 @@
         padding: 8px 16px;
     }
 
-    /* ✅ let the card shrink to the image */
+    /* Let the card shrink to the image */
     .image1 {
         width: auto;          /* was 30% */
         max-width: 320px;     /* same as your desktop max */
