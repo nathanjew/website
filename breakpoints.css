@@ -125,4 +125,11 @@
         display: block;                 /* stack vertically */
         padding: 4px 0;
     }
+
+    nav img {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 100px;          /* keep size */
+        border-radius: 50%;    /* keep the circle */
+    }
 }
