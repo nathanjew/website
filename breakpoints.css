@@ -73,6 +73,7 @@
         max-width: 100%;
         margin: 24px 16px 40px 16px; 
         padding: 16px 20px;
+        text-align: center;
     }
 
     .about-me .row {
