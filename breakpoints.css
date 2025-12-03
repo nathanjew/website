@@ -42,6 +42,51 @@
     }
 }
 
+/* ============================
+   Medium screens (tablets + small laptops)
+   1200px and below
+   ============================ */
+@media (max-width: 1200px) {
+
+    .about-me {
+        max-width: 900px;       /* tighten the card */
+        padding: 20px 24px;     /* less side padding */
+    }
+
+    .about-me .row {
+        gap: 24px;              /* reduce spacing between text & photo */
+    }
+
+    .about-photo img {
+        max-width: 360px;       /* shrink photo slightly */
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .about-me {
+        max-width: 100%;
+        margin: 24px 16px 40px 16px; 
+        padding: 16px 20px;
+    }
+
+    .about-me .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .about-photo img {
+        width: 100%;           /* allow full width of container */
+        max-width: 600px;      /* NEW: large enough for tablet */
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        object-fit: cover;
+    }
+}
+
 /* Phones (mobile L and smaller) – FINAL OVERRIDES */
 @media (max-width: 425px) {
 

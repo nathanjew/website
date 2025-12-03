@@ -337,20 +337,46 @@ nav img {
 
 /* ---------- ABOUT ME PAGE ---------- */
 
+/* wrapper for about content */
 .about-me {
-    width: 100%;
-    margin: 0 auto 50px auto;
+    max-width: 1100px;
+    margin: 40px auto 60px auto;
     background-color: white;
-
+    padding: 20px 24px;    /* ← LESS SIDE PADDING */
+    border-radius: 20px;   /* ← rounded corners */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* optional: soft shadow */
 }
 
+/* row layout inside about-me */
+.about-me .row {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: stretch;           /* columns match tallest height */
+}
+
+/* text + image columns share same flex basis */
 .about-col {
-    flex-basis: 48%;
-    padding: 20px 2px;
+    flex: 1 1 50%;
+    padding: 20px 10px;
 }
 
-.about-col img {
-    width: 50%;
+/* image column: stretch to full height & center image */
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* actual image styling */
+.about-photo img {
+    width: 100%;
+    height: 100%;                   /* match text column height */
+    max-width: 420px;               /* don’t let it get too wide */
+    border-radius: 20px;            /* rounded corners */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); /* nice shadow */
+    object-fit: cover;              /* fill area without squishing */
 }
 
 .about-col h1 {
@@ -363,6 +389,24 @@ nav img {
     font-size: 16px;
     line-height: 30px;
 }
+
+
+.about-col h1 {
+    padding-top: 0;
+    font-size: 30px;
+}
+
+.about-col p {
+    padding: 15px 0 25px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about-body .header {
+    padding: 0px 0;         /* make the blue header short */
+    min-height: 0;           /* remove extra vertical height */
+}
+
 
 /* ---------- PROJECTS PAGE (projects.html) ---------- */
 
