@@ -14,19 +14,17 @@ html {
 
 body {
     min-height: 100%;
-    margin: 0;
 }
 
-/* INDEX PAGE ONLY */
+/* ---------- INDEX PAGE BACKGROUND ---------- */
+
 body.index-body {
-    background-color: #1358af;   /* blue behind everything on index */
+    background-color: #1358af;
 }
 
-/* White content sections ON the index page */
 body.index-body .projectindex {
     background-color: white;
 }
-
 
 /* ---------- GENERAL UTILITIES ---------- */
 
@@ -45,12 +43,12 @@ body.index-body .projectindex {
     position: relative;
 }
 
-/* Header bar */
 .header {
     min-height: 0px;
 }
 
-/* HERO SECTION (name + description + photo) – DESKTOP DEFAULT = SIDE BY SIDE */
+/* Hero section layout */
+
 .textimg {
     min-height: 200px;
     padding-top: 20px;
@@ -89,7 +87,8 @@ nav img {
     padding: 10px 30px;
 }
 
-/* underline attached to the text, not the full li width */
+/* Navbar link underline and hover */
+
 .nav-links ul li a::after {
     content: '';
     position: absolute;
@@ -101,7 +100,6 @@ nav img {
     transition: 0.5s;
 }
 
-/* hover effect */
 .nav-links ul li a:hover::after,
 .nav-links ul li a.active::after {
     width: 100%;
@@ -121,7 +119,6 @@ nav img {
 
 /* ---------- HERO TEXT & IMAGE ---------- */
 
-/* Text block (name + description) */
 .text-box {
     width: 30%;
     min-width: 300px;
@@ -141,32 +138,29 @@ nav img {
     line-height: 1.4;
 }
 
-/* Hero image container */
 .image1 {
-    flex: 0 0 auto;                   /* don't stretch */
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 320px;                 /* same limit as before */
-    border-radius: 20px;              /* rounded card */
-    overflow: hidden;                 /* clip image corners */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* card shadow */
-    background-color: #1358af;        /* or white / transparent, as you like */
+    max-width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #1358af;
 }
 
-/* Actual hero image */
 .image1 img {
     display: block;
     width: 100%;
-    height: auto;                /* container handles the rounding */
+    height: auto;
     max-width: 320px;
-    border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Buttons under hero text */
+/* Hero buttons */
+
 .hero-buttons {
-    margin-top: 18px; 
+    margin-top: 18px;
     display: flex;
     gap: 15px;
 }
@@ -199,14 +193,6 @@ nav img {
     gap: 20px;
 }
 
-/* Center content inside each project card row on projects.html */
-.project1 .row,
-.project2 .row,
-.project3 .row,
-.project4 .row {
-    align-items: center;
-}
-
 /* ---------- INDEX PAGE PROJECTS ---------- */
 
 .projectindex {
@@ -221,51 +207,48 @@ nav img {
 }
 
 .projects-subtitle {
-    margin-top: 15px;         /* spacing under title */
-    margin-bottom: 15px;      /* space before images */
-    font-size: 18px;          /* slightly bigger text */
-    color: #333;              /* dark gray for nicer contrast */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
     text-align: center;
 }
 
-/* Row that holds the three projects */
 .projectindex .row {
     margin-top: 3%;
     display: flex;
-    justify-content: center;   /* center the group */
-    gap: 32px;                 /* spacing between cards */
+    justify-content: center;
+    gap: 32px;
 }
 
-/* Each project card – card handles the radius + shadow */
 .index-col {
     flex: 0 0 auto;
     position: relative;
-    border-radius: 18px;                /* match image corners */
-    overflow: hidden;                   /* clip image + overlay */
+    border-radius: 18px;
+    overflow: hidden;
     margin-bottom: 30px;
     background: none;
 }
 
-/* Project images – no radius/shadow, card handles that */
 .index-col img {
     width: 300px;
     height: auto;
     display: block;
-    border-radius: 0;                   /* let parent clip corners */
-    box-shadow: none;                   /* shadow already on card */
+    border-radius: 0;
+    box-shadow: none;
     transition: transform 0.3s ease;
 }
-
 
 .index-col img:hover {
     transform: scale(1.03);
 }
 
-/* Hover overlay – same size as card/image */
+/* Index project hover overlay */
+
 .layer {
     position: absolute;
     inset: 0;
-    border-radius: inherit;             /* exactly matches card */
+    border-radius: inherit;
     background: transparent;
     display: flex;
     justify-content: center;
@@ -274,15 +257,13 @@ nav img {
     transition: 0.3s ease;
 }
 
-/* Only tint on hover */
 .index-col:hover .layer {
     background: rgba(255, 255, 255, 0.4);
     color: black;
     font-size: 20px;
 }
 
-
-/* Index button */
+/* Index page button */
 
 .index-button {
     display: inline-block;
@@ -302,19 +283,16 @@ nav img {
     background: #1358af;
     transition: 1s;
     color: white;
-    border-color: white;
 }
 
 /* ---------- FOOTER ---------- */
 
 .footer {
-    margin-top: 0px;          /* add white space above footer */
     width: 100%;
     text-align: center;
-    padding: 16px 0 16px;      /* tighten or loosen as you like */
+    padding: 16px 0 16px;
     background-color: #1358af;
 }
-
 
 .footer h4 {
     margin-bottom: 10px;
@@ -334,62 +312,44 @@ nav img {
     font-size: 40px;
 }
 
-
 /* ---------- ABOUT ME PAGE ---------- */
 
-/* wrapper for about content */
 .about-me {
     max-width: 1100px;
     margin: 40px auto 60px auto;
     background-color: white;
-    padding: 20px 24px;    /* ← LESS SIDE PADDING */
-    border-radius: 20px;   /* ← rounded corners */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* optional: soft shadow */
+    padding: 20px 24px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* row layout inside about-me */
 .about-me .row {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    align-items: stretch;           /* columns match tallest height */
+    align-items: stretch;
 }
 
-/* text + image columns share same flex basis */
 .about-col {
     flex: 1 1 50%;
     padding: 20px 10px;
 }
 
-/* image column: stretch to full height & center image */
 .about-photo {
     display: flex;
     justify-content: center;
     align-items: stretch;
 }
 
-/* actual image styling */
 .about-photo img {
     width: 100%;
-    height: 100%;                   /* match text column height */
-    max-width: 420px;               /* don’t let it get too wide */
-    border-radius: 20px;            /* rounded corners */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); /* nice shadow */
-    object-fit: cover;              /* fill area without squishing */
+    height: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    object-fit: cover;
 }
-
-.about-col h1 {
-    padding-top: 0;
-    font-size: 30px;
-}
-
-.about-col p {
-    padding: 15px 0 25px;
-    font-size: 16px;
-    line-height: 30px;
-}
-
 
 .about-col h1 {
     padding-top: 0;
@@ -403,8 +363,8 @@ nav img {
 }
 
 .about-body .header {
-    padding: 0px 0;         /* make the blue header short */
-    min-height: 0;           /* remove extra vertical height */
+    padding: 0px 0;
+    min-height: 0;
 }
 
 .about-buttons {
@@ -412,7 +372,7 @@ nav img {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: flex-start; /* matches your layout */
+    justify-content: flex-start;
 }
 
 .about-buttons .about-btn {
@@ -434,22 +394,8 @@ nav img {
     transform: translateY(-2px);
 }
 
-/* ---------- PROJECTS PAGE (projects.html) ---------- */
+/* ---------- PROJECTS PAGE (TEXT + IMAGE SECTIONS) ---------- */
 
-/* Container for all project cards */
-.projects {
-    width: 80%;
-    margin: auto;
-    color: white;
-    text-align: left;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-/* Individual project card */
 .project1,
 .project2,
 .project3,
@@ -465,14 +411,15 @@ nav img {
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
+    flex: 1 1 50%;
 }
 
-/* Project images on projects.html */
 .projects-col img {
     width: 100%;
-    height: auto;
-    max-width: 350px;
+    height: 100%;
+    max-width: none;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .projects-col h1 {
@@ -491,6 +438,177 @@ nav img {
     padding-left: 20px;
 }
 
+.project1 .row,
+.project2 .row,
+.project3 .row,
+.project4 .row {
+    align-items: stretch;
+}
+
+/* ---------- PROJECT TILE GRID (IMAGE BOXES) ---------- */
+
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-grid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.project-tile {
+    position: relative;
+    flex: 1 1 calc(25% - 24px);
+    min-width: 240px;
+    max-width: 350px;
+    aspect-ratio: 4 / 3;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Project tile label overlay */
+
+.tile-label {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 10px 14px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    color: white;
+    font-weight: 600;
+    align-items: flex-end;
+}
+
+.tile-label span {
+    font-size: 16px;
+}
+
+.project-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+.projects-wrapper {
+    max-width: 1400px;
+    margin: 40px auto 60px auto;
+    background-color: white;
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.projects-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #525151;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ---------- PROJECT MODAL (POPUP) ---------- */
+
+.project-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity 0.2s ease;
+}
+
+.project-modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.project-modal-content {
+    background: white;
+    border-radius: 20px;
+    max-width: 960px;
+    width: 92%;
+    max-height: 90vh;
+    padding: 24px 26px 28px 26px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+}
+
+.modal-image {
+    flex: 1 1 40%;
+}
+
+.modal-image img {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+.modal-text {
+    flex: 1 1 55%;
+}
+
+.modal-text h2 {
+    margin-bottom: 12px;
+}
+
+.modal-text ul {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Modal close button */
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
 /* ---------- HORIZONTAL RULE ---------- */
 
 hr {
@@ -502,4 +620,3 @@ hr {
     margin: 0;
     border: 0;
 }
-

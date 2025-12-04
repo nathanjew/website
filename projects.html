@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
-<body class ="projects-body">
+<!------- Header ------->
+
+<body class="projects-body">
     <section class="header">
         <nav>
             <img src="logo.png">
+            <!-- Navigation bar links -->
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,91 +32,147 @@
         </nav>
     </section>
 
+    <!------- Projects Content ------->
     <section class="projects">
+        <!-- White box -->
+        <div class="projects-wrapper">
+            <h2 class="projects-title">Click on the tiles!</h2>
+            <!-- Project grid -->
+            <div class="project-grid">
 
-        <div class="project1">
-            <div class="row">
-                <div class="projects-col">
-                    <h1>Separation Smart Counter</h1>
+                <!-- Project 1 -->
+                <div class="project-tile" data-project="1">
+                    <img src="separation counter.JPEG" alt="Separation Smart Counter">
+                    <div class="tile-label">
+                        <span>Separation Smart Counter</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-tile" data-project="2">
+                    <img src="website.jpg" alt="Personalized Website">
+                    <div class="tile-label">
+                        <span>Personalized Website</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-tile" data-project="3">
+                    <img src="electronic dice.JPEG" alt="LED Dice Face Randomizer">
+                    <div class="tile-label">
+                        <span>LED Dice Face Randomizer</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-tile" data-project="4">
+                    <img src="skateboard blue.jpg" alt="Magnetic Skateboard Backpack">
+                    <div class="tile-label">
+                        <span>Magnetic Skateboard Backpack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- Project pop ups (modals) ------->
+    <!-- Pop up for project 1 -->
+    <div class="project-modal" id="project-1-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="separation counter.JPEG" alt="Separation Smart Counter">
+                </div>
+                <div class="modal-text">
+                    <h2>Separation Smart Counter</h2>
                     <ul>
                         <li>Designed and built a device that sends phone notifications when separated, applicable in
-                            dieting, burglary detection, and medication tracking</li>
+                            dieting, burglary detection, and medication tracking.</li>
                         <li>Designed and wired the circuit with an ESP32 microcontroller on a breadboard, then tested to
-                            ensure reliable counter updates and notifications</li>
-                        <li>Modelled and 3D-printed a protective shell casing in SolidWorks</li>
+                            ensure reliable counter updates and notifications.</li>
+                        <li>Modelled and 3D-printed a protective shell casing in SolidWorks.</li>
                     </ul>
-                </div>
-                <div class="projects-col">
-                    <img src="separation counter.JPEG">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="project2">
-            <div class="row">
-                <div class="projects-col">
-                    <h1>Personalized Website</h1>
+    <!-- Pop up for project 2 -->
+    <div class="project-modal" id="project-2-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="website.jpg" alt="Personalized Website">
+                </div>
+                <div class="modal-text">
+                    <h2>Personalized Website</h2>
                     <ul>
                         <li>Self-taught HTML and CSS through online tutorials and practice to develop a personalized
-                            website to showcase projects, skills, and interests</li>
+                            website to showcase projects, skills, and interests.</li>
                         <li>Learned and utilized GitHub to import files, store them in a repository, and connect to a
-                            domain name</li>
-                        <li>Constantly updating with new information and projects</li>
+                            domain name.</li>
+                        <li>Continuously updating the site with new information and projects.</li>
                     </ul>
-                </div>
-                <div class="projects-col">
-                    <img src="coding3.jpg">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="project3">
-            <div class="row">
-                <div class="projects-col">
-                    <h1>LED Dice Face Randomizer</h1>
+    <!-- Pop up for project 3 -->
+    <div class="project-modal" id="project-3-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="electronic dice.JPEG" alt="LED Dice Face Randomizer">
+                </div>
+                <div class="modal-text">
+                    <h2>LED Dice Face Randomizer</h2>
                     <ul>
                         <li>Soldered and assembled a PCB-based circuit with LED lights to generate random dice face
-                            values from 1-6</li>
-                        <li>Gained experience and operated lab equipment, including DC power supplies, oscilloscopes,
-                            function generators, and digital multimeters</li>
-                        <li>Demonstrated the result powered by a 9V battery to teaching assistants, verifying
-                            functionality and reliability</li>
+                            values from 1–6.</li>
+                        <li>Gained experience operating lab equipment, including DC power supplies, oscilloscopes,
+                            function generators, and digital multimeters.</li>
+                        <li>Demonstrated the final circuit powered by a 9V battery to teaching assistants, verifying
+                            functionality and reliability.</li>
                     </ul>
-                </div>
-                <div class="projects-col">
-                    <img src="electronic dice.JPEG">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="project4">
-            <div class="row">
-                <div class="projects-col">
-                    <h1>Magnetic Skateboard Backpack</h1>
+    <!-- Pop up for project 4 -->
+    <div class="project-modal" id="project-4-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="skateboard blue.jpg" alt="Magnetic Skateboard Backpack">
+                </div>
+                <div class="modal-text">
+                    <h2>Magnetic Skateboard Backpack</h2>
                     <ul>
                         <li>Designed and modelled magnetic brackets in SolidWorks to securely attach a skateboard to a
-                            backpack</li>
+                            backpack.</li>
                         <li>Assembled and tested prototypes using 3D-printed components, evaluating security, attachment
-                            strength, and overall ease of use</li>
+                            strength, and overall ease of use.</li>
                         <li>Collaborated in a team of 8 to develop the product and deliverables, including an
-                            instructional video and a poster presentation, showcased to professional engineers</li>
-                        <li>Recognized by the course professor as the most unique project and idea</li>
+                            instructional video and a poster presentation showcased to professional engineers.</li>
+                        <li>Recognized by the course professor as the most unique project and idea.</li>
                     </ul>
-                </div>
-                <div class="projects-col">
-                    <img src="skateboard blue.jpg">
                 </div>
             </div>
         </div>
-
-    </section>
+    </div>
 
     <div class="row">
         <div class="projects-col">
         </div>
     </div>
-    <!------  Footer ------->
 
+    <!------  Footer ------->
     <section class="footer">
         <div class="icons">
             <a href="https://www.linkedin.com/in/nathanrjew/"><i class="fa fa-linkedin-square"></i></a>
@@ -121,6 +180,35 @@
         </div>
         <h4>Nathan Jew | Vancouver, Canada</h4>
     </section>
+
+    <!------  JavaScript for the pop ups ------->
+    <script>
+        // Open pop up (modal) when tile is clicked
+        document.querySelectorAll('.project-tile').forEach(tile => {
+            tile.addEventListener('click', () => {
+                const id = tile.getAttribute('data-project');
+                const modal = document.getElementById(`project-${id}-modal`);
+                if (modal) modal.classList.add('open');
+            });
+        });
+
+        // Close modal when X or background is clicked
+        document.querySelectorAll('.project-modal').forEach(modal => {
+            const closeBtn = modal.querySelector('.modal-close');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.remove('open');
+                });
+            }
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('open');
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

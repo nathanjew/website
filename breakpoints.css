@@ -1,8 +1,5 @@
-/* ============================
-   Large laptop screens
-   (everything 1777px and below)
-   ============================ */
-   @media (max-width: 1777px) {
+/* Large laptop screens (1777px and below) */
+@media (max-width: 1777px) {
 
     .textimg {
         min-height: auto;
@@ -30,10 +27,9 @@
         padding: 8px 16px;
     }
 
-    /* Let the card shrink to the image */
     .image1 {
-        width: auto;          /* was 30% */
-        max-width: 320px;     /* same as your desktop max */
+        width: auto;
+        max-width: 320px;
         align-self: flex-start;
     }
 
@@ -42,36 +38,46 @@
     }
 }
 
-/* ============================
-   Medium screens (tablets + small laptops)
-   1200px and below
-   ============================ */
+/* Medium screens (tablets and small laptops, 1200px and below) */
 @media (max-width: 1200px) {
 
     .about-me {
-        max-width: 900px;       /* tighten the card */
-        padding: 20px 24px;     /* less side padding */
+        max-width: 900px;
+        padding: 20px 24px;
     }
 
     .about-me .row {
-        gap: 24px;              /* reduce spacing between text & photo */
+        gap: 24px;
     }
 
     .about-photo img {
-        max-width: 360px;       /* shrink photo slightly */
+        max-width: 360px;
         height: auto;
+    }
+
+    .project-tile {
+        flex: 1 1 calc(33.33% - 24px);
+    }
+
+    .projects-wrapper {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+    }
+
+    .projects-body {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #1358af;
     }
 }
 
-/* ============================
-   Tablet & small laptop layout
-   (900px and below)
-   ============================ */
+/* Tablet and small laptop layout (900px and below) */
 @media (max-width: 900px) {
 
     .about-me {
         max-width: 100%;
-        margin: 24px 16px 40px 16px; 
+        margin: 24px 16px 40px 16px;
         padding: 16px 20px;
         text-align: center;
     }
@@ -83,15 +89,14 @@
     }
 
     .about-photo img {
-        width: 80%;           /* allow full width of container */
-        max-width: 600px;      /* NEW: large enough for tablet */
+        width: 80%;
+        max-width: 600px;
         height: auto;
         border-radius: 20px;
         box-shadow: 0 12px 30px rgba(0,0,0,0.18);
         object-fit: cover;
     }
 
-    /* HERO – stack like a big phone */
     .textimg {
         display: flex;
         flex-direction: column;
@@ -116,7 +121,7 @@
     }
 
     .image1 img {
-        width: 100%;   /* nice size for tablet */
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -134,32 +139,41 @@
         margin: 0 auto;
     }
     
-    /* PROJECTS – prevent horizontal scroll */
     .projectindex {
         width: 100%;
-        margin: 0;          /* make sure the white bar spans full width */
+        margin: 0;
     }
 
     .projectindex .row {
-        flex-wrap: wrap;    /* allow images to go to next line */
+        flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
     }
 
     .index-col img {
-        width: 70vw;        /* each card ~70% of viewport width */
-        max-width: 320px;   /* but don’t go bigger than desktop size */
+        width: 70vw;
+        max-width: 320px;
+    }
+
+    .project-tile {
+        flex: 1 1 calc(50% - 24px);
     }
 }
 
-/* Phones (mobile L and smaller) – FINAL OVERRIDES */
+/* Project grid on small screens (600px and below) */
+@media (max-width: 600px) {
+    .project-tile {
+        flex: 1 1 100%;
+    }
+}
+
+/* Phones (425px and below) */
 @media (max-width: 425px) {
 
-    /* HERO: stack text then image */
     .textimg {
         display: flex;
         flex-direction: column;
-        align-items: center;          /* center whole column */
+        align-items: center;
         padding: 32px 5%;
         gap: 24px;
     }
@@ -185,18 +199,34 @@
         margin: 0 auto;
     }
 
-    /* PROJECTS: cards in a column */
     .projectindex .row {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
+    .projects-body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .projects-wrapper {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .project-grid {
+        gap: 12px;
+    }
+
+    .project-tile {
+        border-radius: 14px;
+    }
+
     .index-col {
         flex-basis: auto;
     }
 
-    /* center hero buttons */
     .hero-buttons {
         justify-content: center;
         width: 100%;
@@ -208,16 +238,15 @@
         margin: 0 auto;
     }
 
-    /* NAV: logo left, links stacked + right aligned */
     nav {
-        justify-content: space-between;  /* logo left, links right */
+        justify-content: space-between;
         align-items: flex-start;
     }
 
     .nav-links {
         display: flex;
-        flex-direction: column;         /* stack links vertically */
-        align-items: flex-end;          /* push stack to right edge */
+        flex-direction: column;
+        align-items: flex-end;
         text-align: right;
         padding-right: 16px;
         padding-top: 10px;
@@ -232,14 +261,14 @@
     }
 
     .nav-links ul li {
-        display: block;                 /* stack vertically */
+        display: block;
         padding: 4px 0;
     }
 
     nav img {
         margin-top: 10px;
         margin-left: 10px;
-        width: 100px;          /* keep size */
-        border-radius: 50%;    /* keep the circle */
+        width: 100px;
+        border-radius: 50%;
     }
 }
