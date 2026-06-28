@@ -55,8 +55,8 @@
         height: auto;
     }
 
-    .project-tile {
-        flex: 1 1 calc(33.33% - 24px);
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .projects-wrapper {
@@ -150,15 +150,15 @@
         max-width: 320px;
     }
 
-    .project-tile {
-        flex: 1 1 calc(50% - 24px);
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Project grid on small screens (600px and below) */
 @media (max-width: 600px) {
-    .project-tile {
-        flex: 1 1 100%;
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 }
 
