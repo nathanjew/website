@@ -153,6 +153,10 @@
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .about-home p {
+        text-align: center;
+    }
 }
 
 /* Project grid on small screens (600px and below) */

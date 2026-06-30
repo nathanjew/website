@@ -37,11 +37,24 @@
         <!-- White box -->
         <div class="projects-wrapper">
             <h2 class="projects-title">Click on the tiles to view the projects!</h2>
+
             <!-- Project grid -->
             <div class="project-grid">
 
                 <!-- Project 10 -->
                 <div class="project-tile" data-project="10">
+                    <img src="cube solver.jpg" alt="Rubik's Cube Solving Robot">
+                    <div class="tile-label">
+                        <span>
+                            Rubik's Cube Solving Robot
+                            <br>
+                            Jun 2026 - Present
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-tile" data-project="9">
                     <img src="baselinerippleadder.PNG" alt="64-bit RISC-V Execution Unit">
                     <div class="tile-label">
                         <span>
@@ -52,8 +65,8 @@
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-tile" data-project="6">
+                <!-- Project 8 -->
+                <div class="project-tile" data-project="8">
                     <img src="cmosopamp.png" alt="Folded-Cascode CMOS Op-Amp Design">
                     <div class="tile-label">
                         <span>
@@ -64,9 +77,9 @@
                     </div>
                 </div>
 
-                <!-- Project 1 -->
-                <div class="project-tile" data-project="1">
-                    <img src="spine-align.JPG" alt="Spine-Align">
+                <!-- Project 7 -->
+                <div class="project-tile" data-project="7">
+                    <img src="spine-align.JPG" alt="Spine-Align: Posture Monitor">
                     <div class="tile-label">
                         <span>
                             Spine-Align: Posture Monitor
@@ -76,8 +89,8 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-tile" data-project="2">
+                <!-- Project 6 -->
+                <div class="project-tile" data-project="6">
                     <img src="separation counter.JPEG" alt="Separation Smart Counter">
                     <div class="tile-label">
                         <span>
@@ -88,8 +101,8 @@
                     </div>
                 </div>
 
-                <!-- Project 9 -->
-                <div class="project-tile" data-project="9">
+                <!-- Project 5 -->
+                <div class="project-tile" data-project="5">
                     <img src="ltspicenotch.PNG" alt="Cascaded Notch & Butterworth Filter">
                     <div class="tile-label">
                         <span>
@@ -100,12 +113,12 @@
                     </div>
                 </div>
 
-                <!-- Project 11 -->
-                <div class="project-tile" data-project="11">
-                    <img src="workbench lamp.PNG" alt="Solidworks Object Enhancement">
+                <!-- Project 4 -->
+                <div class="project-tile" data-project="4">
+                    <img src="workbench lamp.PNG" alt="SolidWorks Object Enhancement">
                     <div class="tile-label">
                         <span>
-                            Solidworks Object Enhancement
+                            SolidWorks Object Enhancement
                             <br>
                             Nov - Dec 2024
                         </span>
@@ -114,73 +127,150 @@
 
                 <!-- Project 3 -->
                 <div class="project-tile" data-project="3">
-                    <img src="website.png" alt="Personalized Website">
+                    <img src="website.png" alt="Personal Website">
                     <div class="tile-label">
                         <span>
-                            Personalized Website
+                            Personal Website
                             <br>
                             May - Aug 2024
                         </span>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-tile" data-project="4">
+                <!-- Project 2 -->
+                <div class="project-tile" data-project="2">
                     <img src="skateboard grey.png" alt="Magnetic Skateboard Backpack">
                     <div class="tile-label">
                         <span>
-                            Magnetic Skateboard Backpack
+                            Magnetic Skateboard Backpack System
                             <br>
                             Sept - Dec 2023
                         </span>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-tile" data-project="5">
+                <!-- Project 1 -->
+                <div class="project-tile" data-project="1">
                     <img src="electronic dice.JPEG" alt="LED Dice Face Randomizer">
                     <div class="tile-label">
                         <span>
-                            LED Dice Face Randomizer
+                            LED PCB-Based Random Number Generator
                             <br>
                             Nov 2023
                         </span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!------- Project pop ups (modals) ------->
 
-
-    <!------- Project pop ups (modals) ------->
-    <!-- Pop up for project 1 -->
-    <div class="project-modal" id="project-1-modal">
+    <!-- Project 10 Modal -->
+    <div class="project-modal" id="project-10-modal">
         <div class="project-modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
                 <div class="modal-image">
-                    <img src="spine-align.JPG" alt="Spine-Align">
+                    <img src="cube solver.jpg" alt="Rubik's Cube Solving Robot">
                 </div>
                 <div class="modal-text">
                     <h2>
-                        Spine-Align: Posture Monitor<br>
-                        <span class="modal-subtitle">Embedded and Real Time System Software - ENSC351, SFU (Sept - Dec
-                            2025)</span>
+                        Rubik's Cube Solving Robot<br>
+                        <span class="modal-subtitle">Personal Project (Jun 2026 - Present)</span>
                     </h2>
-                    Spine-Align is a wearable posture-monitoring device built on the BeagleY-AI platform. It uses an
-                    analog accelerometer attached to the user's back to read through the MCP3208 ADC to measure
-                    upper-back tilt and classify posture in real time. The system provides instant feedback using an LED
-                    indicator and allows
-                    users to adjust posture thresholds and sensitivity through an onboard joystick.
+                    This project is an automated Rubik's Cube solver that combines mechanical design, embedded systems,
+                    and electronics. So far, I have designed a custom cube rotation mechanism in SolidWorks and
+                    manufactured the prototype using 3D printing. I also developed embedded C++ firmware on an ESP32 to
+                    control a NEMA 17 stepper motor through a TMC2209 driver, allowing the mechanism to rotate the cube
+                    with precise angular positioning. This project is still in development, with future work including
+                    the complete multi-axis mechanism, custom PCB, and autonomous cube-solving functionality.
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Pop up for project 2 -->
-    <div class="project-modal" id="project-2-modal">
+    <!-- Project 9 Modal -->
+    <div class="project-modal" id="project-9-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="baselinerippleadder.PNG" alt="64-bit RISC-V Execution Unit">
+                </div>
+                <div class="modal-text">
+                    <h2>
+                        64-bit RISC-V Execution Unit<br>
+                        <span class="modal-subtitle">Digital Systems Design - ENSC 350, SFU (Apr - May 2026)</span>
+                    </h2>
+                    In this project, I designed and verified a modular 64-bit RISC-V execution unit in VHDL that
+                    implemented arithmetic, logical, comparison, branch, and configurable barrel shifter operations for
+                    FPGA implementation. I developed and compared several adder architectures, including Ripple Carry,
+                    Carry-Select, and Kogge-Stone designs, to evaluate hardware resource utilization and timing
+                    performance on Cyclone IV and Arria II FPGAs. I also created a comprehensive ModelSim testbench with
+                    automated test vectors to verify functionality and synthesized each design in Intel Quartus Prime to
+                    analyze RTL structures, FPGA resource usage, and worst-case propagation delays. The image
+                    shows the baseline Ripple Carry Adder used as the foundation of the execution unit.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 8 Modal -->
+    <div class="project-modal" id="project-8-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="cmosopamp.png" alt="Folded-Cascode CMOS Op-Amp Design">
+                </div>
+                <div class="modal-text">
+                    <h2>
+                        Folded-Cascode CMOS Op-Amp Design<br>
+                        <span class="modal-subtitle">Microelectronics II - ENSC 325, SFU (Mar - Apr 2026)</span>
+                    </h2>
+                    This project involved designing and simulating a folded-cascode CMOS operational amplifier using
+                    OrCAD X PSpice. I iteratively optimized transistor sizing, biasing, and frequency compensation to
+                    meet challenging performance targets while balancing gain, bandwidth, stability, and power
+                    consumption. The final design achieved 74 dB open-loop gain, 1.73 MHz bandwidth, a 67° phase margin,
+                    a 1.33 V/μs slew rate, and 0.42 mW power consumption, giving me hands-on experience with analog CMOS
+                    circuit design and performance optimization. The image shows the final folded-cascode op-amp
+                    schematic
+                    with the biasing and compensation networks.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 7 Modal -->
+    <div class="project-modal" id="project-7-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="spine-align.JPG" alt="Spine-Align: Posture Monitor">
+                </div>
+                <div class="modal-text">
+                    <h2>
+                        Spine-Align: Posture Monitor<br>
+                        <span class="modal-subtitle">Embedded and Real Time System Software - ENSC 351, SFU (Sept - Dec
+                            2025)</span>
+                    </h2>
+                    Spine-Align is a wearable posture-monitoring device built on the BeagleY-AI platform. It uses an
+                    analog accelerometer attached to the user's back to read through the MCP3208 ADC to measure
+                    upper-back tilt and classify posture in real time. The system provides instant feedback using an LED
+                    indicator and allows users to adjust posture thresholds and sensitivity through an onboard joystick.
+                    The image shows the final prototype on a test subject, with the accelerometer mounted on the upper
+                    back
+                    and the BeagleY-AI board on the chest.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 6 Modal -->
+    <div class="project-modal" id="project-6-modal">
         <div class="project-modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
@@ -197,18 +287,70 @@
                     tracking. I modeled and 3D-printed a protective shell in SolidWorks, then designed and wired the
                     circuit using an ESP32 microcontroller. After assembly, I tested and refined the system to
                     ensure reliable sensor readings, accurate counter updates, and consistent notification delivery.
+                    The image shows the final prototype, with the ESP32 and reed switch. The enclosure is not shown in
+                    order to see the internals.
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Pop up for project 3 -->
+    <!-- Project 5 Modal -->
+    <div class="project-modal" id="project-5-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="ltspicenotch.PNG" alt="Cascaded Notch & Butterworth Filter">
+                </div>
+                <div class="modal-text">
+                    <h2>
+                        Cascaded Notch & Butterworth Filter<br>
+                        <span class="modal-subtitle">Electric Circuits II - ENSC 320, SFU (Aug 2025)</span>
+                    </h2>
+                    This project focused on designing an analog filter capable of removing both 120 Hz mains
+                    interference and high-frequency noise from biomedical signals. I modeled and optimized the filter in
+                    MATLAB and LTspice before building and testing it on a breadboard. Through frequency-response
+                    measurements and laboratory testing, I confirmed that the final design met the required performance
+                    targets while closely matching the theoretical and simulated results. The figure shows the final
+                    cascaded filter circuit, consisting of a 120 Hz notch filter (left) followed by a low-pass
+                    Butterworth filter (right).
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4 Modal -->
+    <div class="project-modal" id="project-4-modal">
+        <div class="project-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="workbench lamp.PNG" alt="SolidWorks Object Enhancement">
+                </div>
+                <div class="modal-text">
+                    <h2>
+                        SolidWorks Object Enhancement<br>
+                        <span class="modal-subtitle">Graphical Communication for Engineering - ENSC 204, SFU (Nov - Dec
+                            2024)</span>
+                    </h2>
+                    This project focused on redesigning an existing workbench lamp to improve its functionality and
+                    manufacturability. Using SolidWorks, I applied Design for Assembly principles to reduce assembly
+                    complexity, improve cable management, and enhance portability. I evaluated mechanical constraints,
+                    iterated component designs, performed a motion study to verify assembly operation, and produced an
+                    exploded assembly view with detailed part and assembly drawings for manufacturing documentation. 
+                    The image shows the final redesigned lamp in SolidWorks.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Modal -->
     <div class="project-modal" id="project-3-modal">
         <div class="project-modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
                 <div class="modal-image">
-                    <img src="website.png" alt="Personalized Website">
+                    <img src="website.png" alt="Personal Website">
                 </div>
                 <div class="modal-text">
                     <h2>
@@ -226,8 +368,8 @@
         </div>
     </div>
 
-    <!-- Pop up for project 4 -->
-    <div class="project-modal" id="project-4-modal">
+    <!-- Project 2 Modal -->
+    <div class="project-modal" id="project-2-modal">
         <div class="project-modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
@@ -236,7 +378,7 @@
                 </div>
                 <div class="modal-text">
                     <h2>
-                        Magnetic Skateboard Backpack<br>
+                        Magnetic Skateboard Backpack System<br>
                         <span class="modal-subtitle">Engineering, Science and Society - ENSC 100W, SFU (Sept - Dec
                             2023)</span>
                     </h2>
@@ -245,14 +387,15 @@
                     focus on usability, safety, and portability. Using 3D-printed components, I assembled and tested
                     multiple prototypes, assessing attachment strength, stability during movement, and overall user
                     experience. The project was recognized by the course professor as the most unique and innovative
-                    design in the class.
+                    design in the class. The image shows our final prototype of the mounting system on the skateboard 
+                    and backpack.
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Pop up for project 5 -->
-    <div class="project-modal" id="project-5-modal">
+    <!-- Project 1 Modal -->
+    <div class="project-modal" id="project-1-modal">
         <div class="project-modal-content">
             <button class="modal-close">&times;</button>
             <div class="modal-body">
@@ -261,7 +404,7 @@
                 </div>
                 <div class="modal-text">
                     <h2>
-                        LED Dice Face Randomizer<br>
+                        LED PCB-Based Random Number Generator<br>
                         <span class="modal-subtitle">Introduction to Electronics Laboratory - ENSC 120, SFU (Nov
                             2023)</span>
                     </h2>
@@ -269,104 +412,8 @@
                     using 9 LED indicators. Through this, I gained experience with soldering and lab equipment,
                     including DC power supplies, oscilloscopes, function generators, and digital multimeters. I
                     completed the project by demonstrating the fully battery-powered system to teaching assistants,
-                    verifying its functionality, reliability, and correct output behavior.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project 6 Modal -->
-    <div class="project-modal" id="project-6-modal">
-        <div class="project-modal-content">
-            <button class="modal-close">&times;</button>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="cmosopamp.png" alt="Folded-Cascode CMOS Op-Amp Design">
-                </div>
-                <div class="modal-text">
-                    <h2>
-                        Folded-Cascode CMOS Op-Amp Design<br>
-                        <span class="modal-subtitle">Integrated Circuits Design - ENSC 427, SFU (Mar - Apr 2026)</span>
-                    </h2>
-                    This project involved designing and simulating a folded-cascode CMOS operational amplifier using
-                    OrCAD X PSpice. I iteratively optimized transistor sizing, biasing, and frequency compensation to
-                    meet challenging performance targets while balancing gain, bandwidth, stability, and power
-                    consumption. The final design achieved 74 dB open-loop gain, 1.73 MHz bandwidth, a 67° phase margin,
-                    a 1.33 V/μs slew rate, and 0.42 mW power consumption, giving me hands-on experience with analog CMOS
-                    circuit design and performance optimization.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project 9 Modal -->
-    <div class="project-modal" id="project-9-modal">
-        <div class="project-modal-content">
-            <button class="modal-close">&times;</button>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="ltspicenotch.PNG" alt="Cascaded Notch & Butterworth Filter">
-                </div>
-                <div class="modal-text">
-                    <h2>
-                        Cascaded Notch & Butterworth Filter<br>
-                        <span class="modal-subtitle">Signals & Systems Laboratory - ENSC 380, SFU (Aug 2025)</span>
-                    </h2>
-                    This project focused on designing an analog filter capable of removing both 120 Hz mains
-                    interference and high-frequency noise from biomedical signals. I modeled and optimized the filter in
-                    MATLAB and LTspice before building and testing it on a breadboard. Through frequency-response
-                    measurements and laboratory testing, I confirmed that the final design met the required performance
-                    targets while closely matching the theoretical and simulated results.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project 10 Modal -->
-    <div class="project-modal" id="project-10-modal">
-        <div class="project-modal-content">
-            <button class="modal-close">&times;</button>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="baselinerippleadder.PNG" alt="64-bit RISC-V Execution Unit">
-                </div>
-                <div class="modal-text">
-                    <h2>
-                        64-bit RISC-V Execution Unit<br>
-                        <span class="modal-subtitle">Digital Systems Design - ENSC 252, SFU (Apr - May 2026)</span>
-                    </h2>
-                    In this project, I designed and verified a modular 64-bit RISC-V execution unit in VHDL that
-                    implemented arithmetic, logical, comparison, branch, and configurable barrel shifter operations for
-                    FPGA implementation. I developed and compared several adder architectures, including Ripple Carry,
-                    Carry-Select, and Kogge-Stone designs, to evaluate hardware resource utilization and timing
-                    performance on Cyclone IV and Arria II FPGAs. I also created a comprehensive ModelSim testbench with
-                    automated test vectors to verify functionality and synthesized each design in Intel Quartus Prime to
-                    analyze RTL structures, FPGA resource usage, and worst-case propagation delays. The image below
-                    shows the baseline Ripple Carry Adder used as the foundation of the execution unit.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project 11 Modal -->
-    <div class="project-modal" id="project-11-modal">
-        <div class="project-modal-content">
-            <button class="modal-close">&times;</button>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="workbench lamp.PNG" alt="Solidworks Object Enhancement">
-                </div>
-                <div class="modal-text">
-                    <h2>
-                        Solidworks Object Enhancement<br>
-                        <span class="modal-subtitle">Graphical Communication for Engineering - ENSC 204, SFU (Nov - Dec
-                            2024)</span>
-                    </h2>
-                    This project focused on redesigning an existing workbench lamp to improve its functionality and
-                    manufacturability. Using SolidWorks, I applied Design for Assembly principles to reduce assembly
-                    complexity, improve cable management, and enhance portability. Throughout the design process, I
-                    evaluated mechanical constraints, iterated component designs, and created detailed part and assembly
-                    drawings to document the final solution.
+                    verifying its functionality, reliability, and correct output behavior. The image shows the final 
+                    assembled circuit with the LED indicators displaying a dice face value of 5.
                 </div>
             </div>
         </div>
