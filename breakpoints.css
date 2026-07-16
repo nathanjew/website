@@ -1,277 +1,557 @@
-/* Large laptop screens (1777px and below) */
-@media (max-width: 1777px) {
+/* =========================================================
+   RESPONSIVE BREAKPOINTS
+   Loaded after style.css
+   ========================================================= */
+
+
+/* ---------- LARGE LAPTOPS: 1400px AND BELOW ---------- */
+
+@media (max-width: 1400px) {
+
+    /* Home hero */
 
     .textimg {
-        min-height: auto;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 5%;
-        padding-right: 5%;
-        align-items: flex-start;
+        gap: 80px;
+        padding: 40px 6% 60px;
     }
 
     .text-box {
-        width: 45%;
+        width: 42%;
+        max-width: 520px;
     }
 
     .text-box h1 {
-        font-size: 64px;
+        font-size: 66px;
+    }
+
+    .image1,
+    .image1 img {
+        max-width: 290px;
+    }
+
+    /* Projects page */
+
+    .projects-wrapper {
+        width: calc(100% - 80px);
+        max-width: 1200px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* ---------- TABLETS / SMALL LAPTOPS: 1000px AND BELOW ---------- */
+
+@media (max-width: 1000px) {
+
+    /* Hero */
+
+    .textimg {
+        gap: 55px;
+        padding: 40px 5% 55px;
+    }
+
+    .text-box {
+        width: 48%;
+        min-width: 0;
+    }
+
+    .text-box h1 {
+        font-size: 54px;
     }
 
     .text-box p {
         font-size: 18px;
     }
 
-    .hero-buttons .hero-btn {
-        font-size: 15px;
-        padding: 8px 16px;
-    }
-
-    .image1 {
-        width: auto;
-        max-width: 320px;
-        align-self: flex-start;
-    }
-
+    .image1,
     .image1 img {
-        max-width: 280px;
-    }
-}
-
-/* Medium screens (tablets and small laptops, 1200px and below) */
-@media (max-width: 1200px) {
-
-    .about-me {
-        max-width: 900px;
-        padding: 20px 24px;
+        max-width: 260px;
     }
 
-    .about-me .row {
-        gap: 24px;
+    /* About */
+
+    .about-home {
+        max-width: 800px;
+        margin-bottom: 40px;
     }
 
-    .about-photo img {
-        max-width: 360px;
-        height: auto;
+    /* Skills */
+
+    .skills-grid {
+        max-width: 760px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .project-grid {
-        grid-template-columns: repeat(3, 1fr);
+    /* Projects */
+
+    .projects {
+        padding-top: 25px;
     }
 
     .projects-wrapper {
-        width: 90%;
-        max-width: 1100px;
-        margin: 40px auto;
-    }
-
-    .projects-body {
-        padding-left: 40px;
-        padding-right: 40px;
-        background-color: #1358af;
-    }
-}
-
-/* Tablet and small laptop layout (900px and below) */
-@media (max-width: 900px) {
-
-    .about-me {
-        max-width: 100%;
-        margin: 24px 16px 40px 16px;
-        padding: 16px 20px;
-        text-align: center;
-    }
-
-    .about-me .row {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-
-    .about-photo img {
-        width: 80%;
-        max-width: 600px;
-        height: auto;
-        border-radius: 20px;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-        object-fit: cover;
-    }
-
-    .textimg {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 32px 5%;
-        gap: 24px;
-    }
-
-    .text-box {
-        width: 100%;
-        text-align: center;
-    }
-
-    .image1 {
-        width: 100%;
-        justify-content: center;
-        margin-top: 12px;
-        align-self: center;
-        box-shadow: none;
-        background-color: transparent;
-    }
-
-    .image1 img {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-        width: 100%;
-        flex-wrap: wrap;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-
-    .projectindex {
-        width: 100%;
-        margin: 0;
-    }
-
-    .projectindex .row {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    .index-col img {
-        width: 70vw;
-        max-width: 320px;
+        width: calc(100% - 50px);
+        margin: 30px auto 50px;
+        padding: 32px;
     }
 
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .about-home p {
+    /* Project modal */
+
+    .project-modal-content {
+        width: 94%;
+        max-width: 850px;
+    }
+
+    .modal-body {
+        gap: 22px;
+        align-items: flex-start;
+    }
+
+    .modal-image {
+        flex: 1 1 42%;
+    }
+
+    .modal-text {
+        flex: 1 1 52%;
+    }
+}
+
+
+/* ---------- TABLETS: 760px AND BELOW ---------- */
+
+@media (max-width: 760px) {
+
+    /* Navigation remains centred and horizontal */
+
+    nav {
+        padding: 12px 16px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        padding: 0;
         text-align: center;
     }
-}
 
-/* Project grid on small screens (600px and below) */
-@media (max-width: 600px) {
-    .project-grid {
-        grid-template-columns: 1fr;
+    .nav-links ul {
+        justify-content: center;
+        gap: 0;
     }
-}
 
-/* Phones (425px and below) */
-@media (max-width: 425px) {
+    .nav-links ul li {
+        padding: 8px 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 17px;
+    }
+
+    /* Hero */
 
     .textimg {
-        display: flex;
+        min-height: auto;
         flex-direction: column;
         align-items: center;
-        padding: 32px 5%;
-        gap: 24px;
+        justify-content: center;
+        gap: 28px;
+        padding: 35px 24px 60px;
     }
 
     .text-box {
         width: 100%;
+        max-width: 600px;
+        min-width: 0;
         text-align: center;
     }
 
-    .projects-subtitle {
+    .text-box h1 {
+        font-size: 52px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image1 {
+        width: min(100%, 280px);
+        max-width: 280px;
+        align-self: center;
+        background-color: transparent;
+    }
+
+    .image1 img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .background-credit,
+    .proj-background-credit {
+        right: 10px;
+        bottom: 6px;
+        font-size: 10px;
+    }
+
+    /* About */
+
+    .about-me {
+        padding: 35px 20px 10px;
+    }
+
+    .about-home {
+        margin: 20px auto 40px;
+        padding: 0;
+    }
+
+    .about-home p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    /* Skills */
+
+    .skills-section {
+        padding: 45px 20px 55px;
+    }
+
+    .skills-subtitle {
+        margin-bottom: 28px;
+    }
+
+    .skills-grid {
+        max-width: 600px;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 24px 22px;
+    }
+
+    /* Projects */
+
+    .projects {
+        padding: 20px 16px 0;
+    }
+
+    .projects-wrapper {
+        width: 100%;
+        margin: 20px auto 45px;
+        padding: 26px 22px;
+        border-radius: 18px;
+    }
+
+    .projects-title {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .tile-label {
+        padding: 9px 11px;
+    }
+
+    .tile-label span {
+        font-size: 14px;
+    }
+
+    /* Modal becomes one column */
+
+    .project-modal {
+        align-items: flex-start;
+        padding: 24px 12px;
+        overflow-y: auto;
+    }
+
+    .project-modal-content {
+        width: 100%;
+        max-height: none;
+        padding: 40px 20px 24px;
+        border-radius: 16px;
+        overflow: visible;
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .modal-image,
+    .modal-text {
+        width: 100%;
+        flex: none;
+    }
+
+    .modal-image img {
+        width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+    }
+
+    .modal-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .modal-text h2 {
+        font-size: 20px;
+    }
+
+    .modal-subtitle {
+        font-size: 15px;
+    }
+
+    .project-skills {
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    .project-skill {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .modal-close {
+        top: 7px;
+        right: 12px;
+        font-size: 30px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 14px 10px 18px;
+    }
+
+    .icons .fa {
+        font-size: 36px;
+        padding: 14px 0;
+    }
+}
+
+
+/* ---------- LARGE PHONES: 560px AND BELOW ---------- */
+
+@media (max-width: 560px) {
+
+    /* Navigation */
+
+    nav {
+        padding: 10px 8px;
+    }
+
+    .nav-links ul li {
+        padding: 8px 16px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+
+    /* Hero */
+
+    .textimg {
+        padding: 28px 18px 55px;
+        gap: 24px;
+    }
+
+    .text-box h1 {
+        font-size: 42px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    .hero-btn {
+        padding: 9px 16px;
         font-size: 15px;
     }
 
     .image1 {
-        width: 100%;
-        justify-content: center;
-        margin-top: 12px;
-        align-self: center;
+        width: min(100%, 245px);
+        max-width: 245px;
+        border-radius: 16px;
     }
 
     .image1 img {
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 245px;
     }
 
-    .projectindex .row {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    /* About */
+
+    .about-me h1,
+    .skills-section h1 {
+        font-size: 27px;
     }
 
-    .projects-body {
-        padding-left: 5px;
-        padding-right: 5px;
+    .about-home p {
+        font-size: 15px;
+    }
+
+    /* Skills */
+
+    .skills-section {
+        padding: 40px 16px 48px;
+    }
+
+    .skills-subtitle {
+        font-size: 15px;
+    }
+
+    .skill-card {
+        padding: 22px 20px;
+        border-radius: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 18px;
+    }
+
+    .skill-card li {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* Projects: one column */
+
+    .projects {
+        padding: 15px 12px 0;
     }
 
     .projects-wrapper {
-        width: 95%;
-        margin: 20px auto;
+        padding: 22px 16px;
+        margin-top: 15px;
     }
 
     .project-grid {
-        gap: 12px;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .project-tile {
-        border-radius: 14px;
+        max-width: 420px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .tile-label span {
+        font-size: 15px;
+    }
+
+    /* Modal */
+
+    .project-modal {
+        padding: 15px 8px;
+    }
+
+    .project-modal-content {
+        padding: 38px 16px 22px;
+    }
+
+    .modal-image img {
+        max-height: 320px;
     }
 
     .modal-text {
         font-size: 14px;
     }
-    
-    .index-col {
-        flex-basis: auto;
+
+    .modal-text h2 {
+        font-size: 19px;
+    }
+
+    .modal-subtitle {
+        display: inline-block;
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .project-skill {
+        font-size: 11px;
+        padding: 5px 9px;
+    }
+
+    /* Footer */
+
+    .footer h4 {
+        font-size: 14px;
+    }
+
+    .icons .fa {
+        font-size: 32px;
+        margin: 0 10px;
+    }
+}
+
+
+/* ---------- SMALL PHONES: 380px AND BELOW ---------- */
+
+@media (max-width: 380px) {
+
+    .nav-links ul li {
+        padding: 7px 12px;
+    }
+
+    .nav-links ul li a {
+        font-size: 15px;
+    }
+
+    .text-box h1 {
+        font-size: 36px;
     }
 
     .hero-buttons {
-        justify-content: center;
-        width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-btn {
-        text-align: center;
-        margin: 0 auto;
+        width: 150px;
     }
 
-    nav {
-        justify-content: space-between;
-        align-items: flex-start;
+    .image1 {
+        width: min(100%, 220px);
     }
 
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: right;
-        padding-right: 16px;
-        padding-top: 10px;
-        width: auto;
-        flex: 0 0 auto;
+    .image1 img {
+        max-width: 220px;
     }
 
-    .nav-links ul {
-        width: 100%;
-        padding: 0;
-        margin: 0;
+    .projects-wrapper {
+        padding: 20px 12px;
     }
 
-    .nav-links ul li {
-        display: block;
-        padding: 4px 0;
+    .projects-title {
+        font-size: 16px;
     }
 
-    nav img {
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 100px;
-        border-radius: 50%;
+    .modal-text h2 {
+        padding-right: 10px;
+        font-size: 18px;
     }
 }

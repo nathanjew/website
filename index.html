@@ -17,59 +17,137 @@
 <!------- Header ------->
 
 <body class="index-body">
-    <section class="header">
-        <nav>
-            <img src="logo.png">
-            <!-- Navigation bar links -->
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <!-- <li><a href="about.html">About Me</a></li> -->
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
 
-    <section class="textimg">
-        <!------- Name, School, Etc ------->
-        <div class="text-box">
-            <h1>Nathan Jew</h1>
-            <p>Electronics Engineering Student at Simon Fraser University.
-            </p>
-            <!-- LinkedIn, email, resume buttons -->
-            <div class="hero-buttons">
-                <a href="https://www.linkedin.com/in/nathanrjew" target="_blank" class="hero-btn">LinkedIn</a>
-                <a href="mailto:nathan_jew@sfu.ca" class="hero-btn">Email</a>
+    <div class="hero-background">
+
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section class="textimg">
+            <div class="text-box">
+                <h1>Nathan Jew</h1>
+
+                <p>
+                    Electronics Engineering Student at Simon Fraser University.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://www.linkedin.com/in/nathanrjew" target="_blank" class="hero-btn">
+                        LinkedIn
+                    </a>
+
+                    <a href="mailto:nathan_jew@sfu.ca" class="hero-btn">
+                        Email
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="image1">
-            <img src="headshot grad.PNG"></a>
-        </div>
-    </section>
+
+            <div class="image1">
+                <img src="headshot grad.PNG" alt="Nathan Jew">
+            </div>
+        </section>
+
+        <p class="background-credit">
+            © Nathan Jew — Panorama Ridge
+        </p>
+
+    </div>
 
     <!------- About Me ------->
-<section class="projectindex">
-    <h1>About Me</h1>
+    <section class="about-me">
+        <h1>About Me</h1>
 
-    <div class="about-home">
-        <p>
-            Hello! I'm Nathan, a third-year Electronics Engineering student at Simon Fraser University with a passion
-            for designing practical engineering solutions that combine hardware, software, and mechanical design. 
+        <div class="about-home">
+            <p>
+                Hello! I'm Nathan, a third-year Electronics Engineering student at Simon Fraser University with a
+                passion
+                for designing practical engineering solutions that combine hardware, software, and mechanical design.
+            </p>
+
+            <p>
+                Throughout my degree, I've worked on projects ranging from embedded systems and analog circuit design to
+                CAD modelling and rapid prototyping. I enjoy taking ideas from initial concepts through design, testing,
+                and iteration, and I'm always looking for opportunities to learn new technologies.
+            </p>
+
+            <p>
+                This website highlights the projects I’ve worked on. You can explore more in the Projects tab, and feel
+                free to reach out through my LinkedIn or Email in the footer!
+            </p>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h1>Technical Skills</h1>
+
+        <p class="skills-subtitle">
+            The skills that I have developed and used through engineering projects and prototyping.
         </p>
 
-        <p>
-            Throughout my degree, I've worked on projects ranging from embedded systems and analog circuit design to
-            CAD modelling and rapid prototyping. I enjoy taking ideas from initial concepts through design, testing,
-            and iteration, and I'm always looking for opportunities to learn new technologies.
-        </p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>MATLAB</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>VHDL</li>
+                </ul>
+            </div>
 
-        <p>
-            This website highlights the projects I’ve worked on. You can explore more in the Projects tab, and feel 
-            free to reach out through my LinkedIn or Email in the footer!
-        </p>
-    </div>
-</section>
+            <div class="skill-card">
+                <h3>Hardware & Embedded Systems</h3>
+                <ul>
+                    <li>ESP32</li>
+                    <li>BeagleY-AI</li>
+                    <li>SPI Communication</li>
+                    <li>GPIO</li>
+                    <li>Stepper Motors</li>
+                    <li>PCB Assembly</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Engineering Software</h3>
+                <ul>
+                    <li>SolidWorks</li>
+                    <li>KiCad</li>
+                    <li>LTspice</li>
+                    <li>Cadence OrCAD X</li>
+                    <li>Quartus Prime</li>
+                    <li>ModelSim</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Testing & Prototyping</h3>
+                <ul>
+                    <li>
+                        Laboratory Equipment
+                        <ul class="nested-skill-list">
+                            <li>Oscilloscopes</li>
+                            <li>Digital Multimeters</li>
+                            <li>Function Generators</li>
+                            <li>DC Power Supplies</li>
+                        </ul>
+                    </li>
+                    <li>PCB Soldering</li>
+                    <li>3D Printing</li>
+                    <li>Circuit Troubleshooting</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <!------  Footer ------->
     <section class="footer">
@@ -80,4 +158,5 @@
         <h4>Nathan Jew | Vancouver, BC</h4>
     </section>
 </body>
+
 </html>
